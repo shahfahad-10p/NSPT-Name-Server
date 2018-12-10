@@ -1,0 +1,29 @@
+{
+  "name": "NSPT-Name-Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-dev server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahfahad-10p/NSPT-File-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahfahad-10p/NSPT-File-Server/issues"
+  },
+  "homepage": "https://github.com/shahfahad-10p/NSPT-File-Server#readme",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4",
+    "request": "2.88.0"
+  },
+  "devDependencies": {
+    "node-dev": "3.1.3"
+  }
+}
