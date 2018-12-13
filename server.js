@@ -4,13 +4,16 @@ const bodyParser = require('body-parser');
 const config = require('./config/config.js');
 const fs = require('fs');
 const fileRoutes = require('./routes/file');
+const registerRoutes = require('./routes/register');
 
 const fileName = config.path;
 
 var store = [];
+var servers = [];
 
 app.use((req, res, next) => {
     req.store = store;
+    req.servers = servers;
     next();
 });
 
@@ -24,9 +27,10 @@ app.use(function (req, res, next) {
 });
 
 app.use('/file', fileRoutes);
+app.use('', registerRoutes);
 
 app.get('/', (req, res) => {
-    res.send('APP ROOT');
+    res.send('NAME SERVER');
 });
 
 app.listen(3000);
